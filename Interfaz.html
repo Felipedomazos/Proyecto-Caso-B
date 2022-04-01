@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a id="Inicio" class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Nosotros</a>
@@ -54,14 +54,32 @@
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-            <button class="btn btn-primary btn-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight">Carrito</button>
+            <button class="btn btn-success btn-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#btnCarrito"
+              aria-controls="btnCarrito">Carrito</button>
+            <button class="btn btn-success btn-registro" type="button" data-bs-toggle="modal" data-bs-target="#btnRegistro">Registrarse</button>
           </form>
         </div>
     </div>
   </nav>
+  <div class="modal fade" id="btnRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Regístrate aquí y obtén descuentos exclusivos!!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div style="text-align: right">
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="btnCarrito" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Tu Carrito de Compras</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -71,10 +89,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   <div id="MiCarrusel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#MiCarrusel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -112,7 +126,7 @@
 
       <font face="Brush Script MT">
         <center>
-          <h1>Semillas</h1>
+          <h1 id="Semillas">Semillas</h1>
         </center>
       </font>
       <section>
@@ -140,7 +154,7 @@
 
       <font face="Brush Script MT">
         <center>
-          <h1>Macetas</h1>
+          <h1 id="Macetas">Macetas</h1>
         </center>
       </font>
       <section>
@@ -169,7 +183,7 @@
 
       <font face="Brush Script MT">
         <center>
-          <h1>Fertilizantes</h1>
+          <h1 id="Fert">Fertilizantes</h1>
         </center>
       </font>
       <section>

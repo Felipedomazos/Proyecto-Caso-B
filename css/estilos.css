@@ -14,6 +14,11 @@ section {
 
 .btn-carrito{
 
+margin-left: 3vh;
+}
+
+.btn-registro{
+
 margin-left: 2vh;
 }
 
@@ -34,4 +39,3 @@ margin-left: 2vh;
 .btn-bg:hover {
     color: #fff;
 }
-
