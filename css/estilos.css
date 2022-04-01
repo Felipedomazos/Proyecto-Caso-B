@@ -1,0 +1,32 @@
+
+
+
+
+section {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    overflow: hidden;
+    width: 20rem;
+}
+
+
+
+.btn-bg {
+    background-color: #13ec30;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-bg:hover {
+    color: #fff;
+}
+
