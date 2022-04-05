@@ -39,3 +39,9 @@ margin-left: 2vh;
 .btn-bg:hover {
     color: #fff;
 }
+
+.top-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
