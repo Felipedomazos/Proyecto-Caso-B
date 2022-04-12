@@ -67,50 +67,64 @@
         <div class="modal-body">
           <form class="row g-3">
             <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="a" value="">
+                <label for="email">Correo Electrónico</label>
+              </div>
             </div>
             <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="a">
+                <label for="password" class="form-label">Contraseña</label>
+              </div>
             </div>
             <div class="col-12">
-              <label for="inputAddress" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="direccion" placeholder="a">
+                <label for="direccion" class="form-label">Dirección</label>
+              </div>
             </div>
             <div class="col-12">
-              <label for="inputAddress2" class="form-label">Dirección 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Opcional">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="direccion2" placeholder="a" value="Opcional">
+                <label for="direccion2" class="form-label">Dirección 2</label>
+              </div>
             </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" id="inputCity">
+            <div class="col-md-8">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="ciudad" placeholder="a">
+                <label for="ciudad" class="form-label">Ciudad</label>
+              </div>
             </div>
-            <div class="col-md-3">
-              <label for="inputState" class="form-label">Región</label>
-              <select id="inputState" class="form-select">
-                <option selected>Elije...</option>
-                <option>I</option>
-                <option>II</option>
-                <option>III</option>
-                <option>IV</option>
-                <option>V</option>
-                <option>VI</option>
-                <option>VII</option>
-                <option>VIII</option>
-                <option>IX</option>
-                <option>X</option>
-                <option>XI</option>
-                <option>XII</option>
-                <option>Metropolitana</option>
-                <option>XIV</option>
-                <option>XV</option>
-                <option>XVI</option>
-              </select>
+            <div class="col-md-4">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="zipcode" placeholder="a">
+                <label for="zipcode" class="form-label">Código Postal</label>
+              </div>
             </div>
-            <div class="col-md-3">
-              <label for="inputZip" class="form-label">Código Postal</label>
-              <input type="text" class="form-control" id="inputZip">
+            <div class="col-md-12">
+              <div class="form-floating">
+                <select id="region" class="form-select" placeholder="a">
+                  <option selected>Elije una región...</option>
+                  <option>I</option>
+                  <option>II</option>
+                  <option>III</option>
+                  <option>IV</option>
+                  <option>V</option>
+                  <option>VI</option>
+                  <option>VII</option>
+                  <option>VIII</option>
+                  <option>IX</option>
+                  <option>X</option>
+                  <option>XI</option>
+                  <option>XII</option>
+                  <option>Metropolitana</option>
+                  <option>XIV</option>
+                  <option>XV</option>
+                  <option>XVI</option>
+                </select>
+                <label for="region" class="form-label">Región</label>
+              </div>
             </div>
             <div class="col-12">
               <div class="form-check">
@@ -198,7 +212,7 @@
             <h3 class="card-title">Hortalizas</h3>
             <p class="card-text">En Botanic Garden Zen encontraras una amplia variedad de las mejores semillas de
               Hortalizas, hecha un vistazo para ver si encuentras lo que estas buscando!!.</p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/Hortalizas.html" class="btn btn-bg">Ver Más</a>
+            <a href="Hortalizas.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
 
@@ -208,7 +222,7 @@
             <h3 class="card-title">Aromáticas</h3>
             <p class="card-text">En Botanic Garden Zen encontraras una amplia variedad de las mejores semillas de
               Hortalizas, hecha un vistazo para ver si encuentras lo que estas buscando!!.</p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/Aromaticas.html" class="btn btn-bg">Ver Más</a>
+            <a href="Aromaticas.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
       </section>
@@ -227,7 +241,7 @@
             <p class="card-text">En Botanic Garden Zen encontraras una
               variedad de tipos y tamaños de macetas, hecha un vistazo para ver si encuentras lo que estas buscando!!.
             </p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/MacetasGrandes.html" class="btn btn-bg">Ver Más</a>
+            <a href="MacetasGrandes.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
 
@@ -237,7 +251,7 @@
             <h3 class="card-title">Macetas Pequeñas</h3>
             <p class="card-text">En Botanic Garden Zen encontraras una variedad de tipos y tamaños de macetas, hecha un
               vistazo para ver si encuentras lo que estas buscando!!.</p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/MacetasPeque%C3%B1as.html" class="btn btn-bg">Ver Más</a>
+            <a href="MacetasPeque%C3%B1as.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
       </section>
@@ -255,7 +269,7 @@
             <h3 class="card-title">Fertilizantes Inorgánicos</h3>
             <p class="card-text">En Botanic Garden Zen encontraras una amplia variedad de tipos de fetilizantes, hecha
               un vistazo para ver si encuentras lo que estas buscando!!.</p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/FertilizantesInorganicos.html" class="btn btn-bg">Ver Más</a>
+            <a href="FertilizantesInorganicos.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
 
@@ -265,7 +279,7 @@
             <h3 class="card-title">Fertilizantes Orgánicos</h3>
             <p class="card-text">En Botanic Garden Zen encontraras una amplia variedad de tipos de fetilizantes, hecha
               un vistazo para ver si encuentras lo que estas buscando!!.</p>
-            <a href="file:///C:/Users/felip/Desktop/Proyecto-Caso-B/Proyecto-Caso-B/FertilizantesOrganicos.html" class="btn btn-bg">Ver Más</a>
+            <a href="FertilizantesOrganicos.html" class="btn btn-bg">Ver Más</a>
           </div>
         </div>
       </section>
