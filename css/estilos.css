@@ -45,3 +45,11 @@ margin-left: 2vh;
     top: 0;
     width: 100%;
 }
+
+input.error {
+    border: 2px solid rgb(214, 6, 6);
+}
+
+label.error {
+    color: rgba(255, 255, 255, 0);
+}
