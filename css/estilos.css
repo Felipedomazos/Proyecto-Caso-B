@@ -15,11 +15,13 @@ section {
 .btn-carrito{
 
 margin-left: 3vh;
+background-color: #11621c;
 }
 
 .btn-registro{
 
 margin-left: 2vh;
+background-color: #11621c;
 }
 
 
@@ -28,6 +30,66 @@ margin-left: 2vh;
     width: 20rem;
 }
 
+.btn-nosotros {
+    color: rgb(255, 255, 255);
+    text-align:left;
+    background-color: #11621c;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid #000000;
+}
+
+.section-nosotros {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+}
+
+.txt-nosotros {
+    margin-left: 25px;
+    margin-right: 600px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.txt-nosotross {
+    margin-left: 600px;
+    margin-right: 25px;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.txt-qs {
+    margin-left: 25px;
+    margin-right: 500px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.txt-no {
+    margin-left: 820px;
+    margin-right: 25px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.nombre-cont {
+    columns: 1;
+}
+
+.email-cont {
+    columns: 2;
+}
+
+.fono-cont {
+    columns: 2;
+}
+
+.msj-cont {
+    columns: 1;
+}
 
 
 .btn-bg {
@@ -52,4 +114,9 @@ input.error {
 
 label.error {
     color: rgba(255, 255, 255, 0);
+}
+
+
+.form-control {
+    border: 1px solid #000000;
 }

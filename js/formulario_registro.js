@@ -1,10 +1,8 @@
 
 $.validator.addMethod("terminaPor", function(value, element, parametro){
-
     if(value.endsWith(parametro)){
         return true;
     }
-
     return false;
 }, "Debe terminar por {0}")
 
@@ -44,7 +42,6 @@ $("#formulario_registro").validate({
     }
 
 })
-
 
 
 
