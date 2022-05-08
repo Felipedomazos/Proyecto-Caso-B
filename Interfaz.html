@@ -13,6 +13,9 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/estilos.css">
   <script src="https://kit.fontawesome.com/4bc36ec60f.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
 
 </head>
 
@@ -40,7 +43,7 @@
               <a id="Nosotros" class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="#" id="tienda" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Tienda
               </a>
@@ -71,85 +74,87 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Regístrate aquí y obtén descuentos exclusivos!!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="limpiar"></button>
         </div>
         <div class="modal-body">
-          <form class="row g-3" id="formulario_registro">
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="email" class="form-control" id="email" placeholder="a" value="">
-                <label for="email">Correo Electrónico</label>
+          <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Usuario -->
+            <div class="formulario__grupo" id="grupo__direccion">
+              <label for="direccion" class="formulario__label">Direccion</label>
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Calle, Numero">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">La direccion tiene que ser de 4 a 50 dígitos y solo puede contener numeros, letras y coma.</p>
             </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="password" class="form-control" name="contra" id="contra" placeholder="a">
-                <label for="contra" class="form-label">Contraseña</label>
+      
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__ciudad">
+              <label for="ciudad" class="formulario__label">Ciudad</label>
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">La ciudad tiene que ser de 4 a 30 dígitos y solo puede contener letras y espacios.</p>
             </div>
-            <div class="col-12">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="direccion" placeholder="a">
-                <label for="direccion" class="form-label">Dirección</label>
+      
+            <!-- Grupo: Contraseña -->
+            <div class="formulario__grupo" id="grupo__password">
+              <label for="password" class="formulario__label">Contraseña</label>
+              <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
             </div>
-            <div class="col-md-8">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="ciudad" placeholder="a">
-                <label for="ciudad" class="form-label">Ciudad</label>
+      
+            <!-- Grupo: Contraseña 2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+              <label for="password2" class="formulario__label">Repetir Contraseña</label>
+              <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
             </div>
-            <div class="col-md-4">
-              <div class="form-floating">
-                <input type="number" class="form-control" id="zipcode" placeholder="a">
-                <label for="zipcode" class="form-label">Código Postal</label>
+      
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+              <label for="correo" class="formulario__label">Correo Electrónico</label>
+              <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
             </div>
-            <div class="col-md-12">
-              <div class="form-floating">
-                <select id="region" class="form-select" placeholder="a">
-                  <option selected>Elije una región...</option>
-                  <option>I</option>
-                  <option>II</option>
-                  <option>III</option>
-                  <option>IV</option>
-                  <option>V</option>
-                  <option>VI</option>
-                  <option>VII</option>
-                  <option>VIII</option>
-                  <option>IX</option>
-                  <option>X</option>
-                  <option>XI</option>
-                  <option>XII</option>
-                  <option>Metropolitana</option>
-                  <option>XIV</option>
-                  <option>XV</option>
-                  <option>XVI</option>
-                </select>
-                <label for="region" class="form-label">Región</label>
+      
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+              <label for="telefono" class="formulario__label">Teléfono</label>
+              <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
               </div>
+              <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="terminos">
-                <label class="form-check-label" for="gridCheck">
-                  Aceptar términos y condiciones.
-                </label>
-              </div>
+      
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+              <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones
+              </label>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheckk">
-                <label class="form-check-label" for="gridCheck">
-                  Recibir ofertas y stock disponible de nuestros productos a tu correo.
-                </label>
-              </div>
+      
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
             </div>
-            <div class="modal-footer">
-              <input type="reset" value="Limpiar">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary" id="guardar">Registrarse</button>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn">Enviar</button>
+              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
             </div>
+
           </form>
         </div>
       </div>
