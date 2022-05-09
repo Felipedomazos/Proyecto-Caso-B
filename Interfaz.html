@@ -15,6 +15,23 @@
   <script src="https://kit.fontawesome.com/4bc36ec60f.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#enviar").click(function () {
+        $.get("https://joaquinvillalon.github.io/api.json",
+          function (data) {
+            $.each(data.herramientas, function (i, item) {
+              $("#herramientas").append("<tr><td>" + item.idHerramienta +
+                "</td><td>" + item.strNombre +
+                "</td><td><img src='" + item.strImagen + "'>" +
+                "</td><td class='precio'><b>" + item.strPrecio +
+                "</b></td><td>" + item.strDescripcionHerramienta + "</td></tr>");
+            });
+          });
+      });
+    })
+  </script>
 
 
 </head>
@@ -295,6 +312,33 @@
       </section>
       <hr>
 
+    <font face="Brush Script MT">
+    <center>
+      <h1 id="Fert">Herramientas</h1>
+    </center>
+  </font>
+
+  <div class="container" >
+    <div class="row mb-3">
+      <button type="button" class="btn btn-bg" id="enviar">Ver todas las herramientas</button>
+    </div>
+    <div class="row mb-3">
+      <table class="table table-bordered" id="herramientas" >
+        <thead >
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripci&oacute;n</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <hr>
+    
+    
       <footer class="pie-pagina">
         <div class="grupo-1">
           <div class="box">
