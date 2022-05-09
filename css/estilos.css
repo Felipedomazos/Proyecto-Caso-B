@@ -407,7 +407,7 @@ main {
 
 .card-fund2 {
 	width: 60%;
-	height: 250px;
+	height: 290px;
 	display: flex;
 	overflow: hidden;
 	background: #fff;
@@ -424,7 +424,21 @@ main {
 }
 
 .card-fund2 .img-card {
-	background: url(imagenes\Fundacionaf.png);
+	background: url(https://i0.wp.com/fundacionabrazofraterno.cl/wp-content/uploads/2021/03/Logo-Fundacion-abrazo-fraterno_.png?fit=200%2C200&ssl=1);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .img-card1 {
+	background: url(https://yt3.ggpht.com/ytc/AKedOLSI5VzPdmfQV_RQL7vvqGBhsjnngrzhUnXg8NAxYw=s900-c-k-c0x00ffffff-no-rj);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .img-card2 {
+	background: url(https://pbs.twimg.com/profile_images/667340651772715008/iNwW60fJ_400x400.png);
 	width: 40%;
 	height: 100%;
 	background-size: cover;	
