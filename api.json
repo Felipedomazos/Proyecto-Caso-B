@@ -1,0 +1,60 @@
+{
+    "herramientas": [
+        {
+            "idHerramienta": "1",
+            "strNombre": "Tijera de Poda tipo Bypass con estuche",
+            "strImagen": "https:\/\/i.imgur.com\/FHBfjuN.png",
+            "strPrecio": "$12.990",
+            "strDescripcionHerramienta": "Sus cuchillas han sido térmicamente tratadas para una larga duración del filo. Tiene empuñadura con textura antideslizante. Tiene una traba para cierre. Viene incluido un estuche de protección para el cinturón."
+        },
+        {
+            "idHerramienta": "2",
+            "strNombre": "Tijera de cosecha Punta Fina",
+            "strImagen": "https:\/\/i.imgur.com\/Zs5QAIQ.png",
+            "strPrecio": "$8.990",
+            "strDescripcionHerramienta": "Cuchillas cubiertas con titanio para conservar el filo. Fabricada con acero inoxidable. Empuñadura ergonómica."
+        },{
+            "idHerramienta": "3",
+            "strNombre": "Tijerón Poda Ramas Gral",
+            "strImagen": "https:\/\/i.imgur.com\/ZF6QlGt.png",
+            "strPrecio": "$12.990",
+            "strDescripcionHerramienta": "Hoja de acero con tratamiento térmico, Mango de fibra de vidrio y empuñadura de PVC antideslizante"
+        },{
+            "idHerramienta": "4",
+            "strNombre": "Tijerón Mango Telescópico",
+            "strImagen": "https:\/\/i.imgur.com\/7ix823a.png",
+            "strPrecio": "$14.990",
+            "strDescripcionHerramienta": "Hoja de acero al carbono recubierta de titanio para conservar el filo, Mango telescópico de acero y empuñadura TPR con gel, Mayor alcance, Sistema de amortiguación disminuye fatiga"
+        },{
+            "idHerramienta": "5",
+            "strNombre": "Tijera para setos",
+            "strImagen": "https:\/\/i.imgur.com\/Xf1d5ky.png",
+            "strPrecio": "$18.990",
+            "strDescripcionHerramienta": "Las cuchillas están tratadas térmicamente para mantenerse afiladas por más tiempo."
+        },{
+            "idHerramienta": "6",
+            "strNombre": "Pala Jardín Transplante",
+            "strImagen": "https:\/\/i.imgur.com\/9JpVUIk.png",
+            "strPrecio": "$12.990",
+            "strDescripcionHerramienta": "Hoja punta triangular de acero templado para mayor vida útil, Recubrimiento resistente a la corrosión, Mango ergonómico con empuñadura antideslizante"
+        },{
+            "idHerramienta": "7",
+            "strNombre": "Barre hojas ajustable",
+            "strImagen": "https:\/\/i.imgur.com\/9E6WHK7.png",
+            "strPrecio": "$12.990",
+            "strDescripcionHerramienta": "Barre hojas ajustable"
+        },{
+            "idHerramienta": "8",
+            "strNombre": "Pistola de riego 3 posiciones",
+            "strImagen": "https:\/\/i.imgur.com\/fCFrOG3.png",
+            "strPrecio": "$5.990",
+            "strDescripcionHerramienta": "Tiene 3 posiciones de riego. Diseño ergonómico y resistente. Sistema de bloqueo para riego continuo. Empuñadura resistente a los impactos, con cobertura TPR para mayor comodidad. Fácil conexión"
+        },{
+            "idHerramienta": "9",
+            "strNombre": "Mini invernadero Jiffy (12 pastillas)",
+            "strImagen": "https:\/\/i.imgur.com\/QuoQaPX.png",
+            "strPrecio": "$5.990",
+            "strDescripcionHerramienta": "Ideales para iniciación en semilla o esqueje de hortalizas, frutales y aromáticas. Su Sustrato inocuo y malla biodegradable, hacen que sea un producto ideal para el cuidado de las semillas y garantizan un mejor enraizamiento de los esquejes."
+        }
+    ]
+}
