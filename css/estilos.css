@@ -30,6 +30,12 @@ background-color: #11621c;
     width: 20rem;
 }
 
+.label-fundacion {
+	color: #000;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+
 .btn-nosotros {
     color: rgb(255, 255, 255);
     text-align:left;
@@ -158,7 +164,7 @@ label.error {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #E5E5E5;
+	background: #d3d3d3;
 }
 
 main {
@@ -316,4 +322,147 @@ main {
 	.formulario__btn {
 		width: 100%;
 	}
+}
+
+.card-fund {
+	position: relative;
+	width: 360px;
+	height: 380px;
+	margin: 10px;
+	margin-left: 3.5%;
+}
+
+.card-fund .face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.card-fund .front {
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #000;
+}
+
+.card-fund .front img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-fund .front h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	background: rgba(0,0,0,.4);
+	text-align: center;
+}
+
+.card-fund .back {
+	transform: perspective(600px) rotateY(180deg);
+	background: #061e36;
+	padding: 15px;
+	color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #000;
+}
+
+.card-fund .back .link {
+	border-top: solid 1px #f3f3f3;
+	height: 50px;
+	line-height: 50px;
+}
+
+.card-fund .back .link a {
+	color: #f3f3f3; 
+}
+
+.card-fund .back .link h3 {
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.card-fund .back p {
+	letter-spacing: 1px;
+}
+
+.card-fund:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.card-fund:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
+
+.card-fund2 {
+	width: 60%;
+	height: 250px;
+	display: flex;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 5px 10px #033f49;
+	border-radius: 10px;
+	transition: 0.1s;
+	margin-bottom: 35px;
+	margin-left: 20%;
+}
+
+.card-fund2:hover {
+	transform: scale(1.02);
+	box-shadow: 0 5px 20px #033f49;
+}
+
+.card-fund2 .img-card {
+	background: url(imagenes\Fundacionaf.png);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .content {
+	width: 60%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 50px 150px 50px;
+	padding: 10px 15px;
+}
+
+.card-fund2 .content .title h3 {
+	color: #026e5e;
+}
+
+.card-fund2 .content .title span {
+	color: #0089ba;
+	font-size: 80%;
+}
+
+.card-fund2 .content .text p {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 90%;
+	margin-top: 20px;
+}
+
+.card-fund2 .content .btn-container button {
+	background: #0089ba;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;	
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.card-fund2 .content .btn-container button:hover {
+	background: #017eac;
 }
