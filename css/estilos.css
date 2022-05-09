@@ -480,3 +480,21 @@ main {
 .card-fund2 .content .btn-container button:hover {
 	background: #017eac;
 }
+
+.precio{
+
+	color: rgb(0, 134, 56);
+	
+}
+div.card {
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+  }
+thead{
+	background-color: rgb(18, 99, 29);
+	color: white;
+}
+table{
+	background-color: white;
+}
