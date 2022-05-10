@@ -329,7 +329,8 @@ main {
 	width: 360px;
 	height: 380px;
 	margin: 10px;
-	margin-left: 3.5%;
+	margin-left: 6%;
+	margin-right: 4%;
 }
 
 .card-fund .face {
@@ -407,7 +408,7 @@ main {
 
 .card-fund2 {
 	width: 60%;
-	height: 290px;
+	height: 365px;
 	display: flex;
 	overflow: hidden;
 	background: #fff;
