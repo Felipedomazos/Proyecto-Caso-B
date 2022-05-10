@@ -19,7 +19,7 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $("#enviar").click(function () {
-        $.get("https://joaquinvillalon.github.io/api.json",
+        $.get("https://joaquinvillalon.github.io/aapi.json",
           function (data) {
             $.each(data.herramientas, function (i, item) {
               $("#herramientas").append("<tr><td><b>" + item.idHerramienta +
