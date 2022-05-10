@@ -22,9 +22,9 @@
         $.get("https://joaquinvillalon.github.io/api.json",
           function (data) {
             $.each(data.herramientas, function (i, item) {
-              $("#herramientas").append("<tr><td>" + item.idHerramienta +
-                "</td><td>" + item.strNombre +
-                "</td><td><img src='" + item.strImagen + "'>" +
+              $("#herramientas").append("<tr><td><b>" + item.idHerramienta +
+                ".-</b></td><td><b>" + item.strNombre +
+                "</b></td><td><img src='" + item.strImagen + "'>" +
                 "</td><td>" + item.strDescripcionHerramienta + "</td><td class='precio'><b>" + item.strPrecio +
                 "</b></td></tr>");
             });
