@@ -1,0 +1,167 @@
+.card-pr {
+    position: relative;
+    width: 250px;
+	height: 180px;
+	display: flex;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 5px 10px #033f49;
+	border-radius: 10px;
+	transition: 0.1s;
+    margin-top: 4%;
+	margin-left: 10%;
+}
+
+.card-prod {
+	position: relative;
+    width: 360px;
+	height: 360px;
+	display: flex;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 5px 10px #033f49;
+	border-radius: 10px;
+	transition: 0.1s;
+    margin-top: 4%;
+	margin-left: 10%;
+}
+
+.card-pr:hover {
+	transform: scale(1.02);
+	box-shadow: 0 5px 20px #033f49;
+}
+
+.card-int {
+	position: relative;
+	width: 250px;
+	height: 180px;
+	margin-top: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.card-img-pr-fo {
+    background-image: url(../img/fertilizantesorganicos.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-fo:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card-img-pr-fi {
+    background-image: url(../img/fertilizantesinorganicos.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-fi:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card-img-pr-mp {
+    background-image: url(../img/macetaspequenas.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-mp:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card-img-pr-mg {
+    background-image: url(../img/macetasgrandes.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-mg:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card-img-pr-ar {
+    background-image: url(../img/aromaticas.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-ar:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.card-img-pr-ho {
+    background-image: url(../img/hortalizas.png);
+	width: 250px;
+	height: 180px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.card-img-pr-ho:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}

@@ -1,0 +1,498 @@
+section {
+    width: 80vw;
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+
+.btn-carrito{
+
+	margin-left: 3vh;
+	background-color: #11621c;
+}
+
+.btn-registro{
+
+	margin-left: 2vh;
+	background-color: #11621c;
+}
+
+.label-fundacion {
+	color: #000;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+
+.btn-nosotros {
+    color: rgb(255, 255, 255);
+    text-align:left;
+    background-color: #11621c;
+    margin-left: 2%;
+	margin-right: 2%;
+    border: 1px solid #000000;
+}
+
+.section-nosotros {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+	background-color: #fff;
+}
+
+.btn-bg {
+    background-color: #11621c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-bg:hover {
+    color: #fff;
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+input.error {
+    border: 1px solid rgb(214, 6, 6);
+}
+
+label.error {
+    color: rgba(255, 255, 255, 0);
+}
+
+/*-----Pie de pagina-----*/
+
+.pie-pagina {
+    width: 100%;
+    background-color: #11621c;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px; 
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #061e36;
+    border-radius: 22px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(0, 255, 115);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #085321;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media  screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*-----Formulario-----*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #efefef;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+.card-fund {
+	position: relative;
+	width: 360px;
+	height: 380px;
+	margin: 10px;
+	margin-left: 3.5%;
+}
+
+.card-fund .face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.card-fund .front {
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #000;
+}
+
+.card-fund .front img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-fund .front h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	background: rgba(0,0,0,.4);
+	text-align: center;
+}
+
+.card-fund .back {
+	transform: perspective(600px) rotateY(180deg);
+	background: #061e36;
+	padding: 15px;
+	color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #000;
+}
+
+.card-fund .back .link {
+	border-top: solid 1px #f3f3f3;
+	height: 50px;
+	line-height: 50px;
+}
+
+.card-fund .back .link a {
+	color: #f3f3f3; 
+}
+
+.card-fund .back .link h3 {
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.card-fund .back p {
+	letter-spacing: 1px;
+}
+
+.card-fund:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.card-fund:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
+
+.card-fund2 {
+	width: 60%;
+	height: 290px;
+	display: flex;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 5px 10px #033f49;
+	border-radius: 10px;
+	transition: 0.1s;
+	margin-bottom: 35px;
+	margin-left: 20%;
+}
+
+.card-fund2:hover {
+	transform: scale(1.02);
+	box-shadow: 0 5px 20px #033f49;
+}
+
+.card-fund2 .img-card {
+	background: url(https://i0.wp.com/fundacionabrazofraterno.cl/wp-content/uploads/2021/03/Logo-Fundacion-abrazo-fraterno_.png?fit=200%2C200&ssl=1);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .img-card1 {
+	background: url(https://yt3.ggpht.com/ytc/AKedOLSI5VzPdmfQV_RQL7vvqGBhsjnngrzhUnXg8NAxYw=s900-c-k-c0x00ffffff-no-rj);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .img-card2 {
+	background: url(https://pbs.twimg.com/profile_images/667340651772715008/iNwW60fJ_400x400.png);
+	width: 40%;
+	height: 100%;
+	background-size: cover;	
+}
+
+.card-fund2 .content {
+	width: 60%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 50px 150px 50px;
+	padding: 10px 15px;
+}
+
+.card-fund2 .content .title h3 {
+	color: #026e5e;
+}
+
+.card-fund2 .content .title span {
+	color: #0089ba;
+	font-size: 80%;
+}
+
+.card-fund2 .content .text p {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 90%;
+	margin-top: 20px;
+}
+
+.card-fund2 .content .btn-container button {
+	background: #0089ba;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;	
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.card-fund2 .content .btn-container button:hover {
+	background: #017eac;
+}
+
+.precio{
+
+	color: rgb(0, 134, 56);
+	
+}
+
+div.card {
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+thead{
+	background-color: rgb(18, 99, 29);
+	color: white;
+}
+
+table{
+	background-color: white;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
